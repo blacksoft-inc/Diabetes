@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lite_dark" />
+
+
+    <TextView
+        android:id="@+id/recette_name"
+        style="@style/dark_casual_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="recette name"
+        android:textColor="@color/lite_dark" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--/**
+         * this project was designed and developped by "Rasmi Abdel Wadoud" if this last is used anywhere else without permission
+         * you may face some problems
+         * */ -->

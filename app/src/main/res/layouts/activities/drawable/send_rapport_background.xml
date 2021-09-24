@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/white" />
+
+    <size
+        android:width="@dimen/extra_large_ic_size"
+        android:height="@dimen/extra_large_ic_size" />
+
+
+    <gradient
+        android:endColor="@color/dark"
+        android:startColor="@color/colorPrimaryDark" />
+
+    <corners
+
+        android:bottomRightRadius="28dp"
+        android:topLeftRadius="28dp"
+        android:topRightRadius="28dp" />
+
+
+</shape>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--/**
+         * this project was designed and developped by "Rasmi Abdel Wadoud" if this last is used anywhere else without permission
+         * you may face some problems
+         * */ -->

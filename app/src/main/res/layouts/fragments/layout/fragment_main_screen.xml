@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.main_screen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_screen_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/main_screen_header"
+        android:padding="16dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/patient_doctor_infos"
+            android:layout_width="@dimen/small_ic_size"
+            android:layout_height="@dimen/small_ic_size"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/patient_doctor_inf_ic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/send_rapport_infos_textview"
+            style="@style/white___boldcasual_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintLeft_toRightOf="@id/patient_doctor_infos"
+            app:layout_constraintRight_toLeftOf="@id/alarm_notifs"
+            app:layout_constraintTop_toTopOf="@id/alarm_notifs" />
+
+        <View
+            android:id="@+id/animated_background"
+            android:layout_width="@dimen/extra_large_ic_size"
+            android:layout_height="@dimen/extra_large_ic_size"
+            android:background="@drawable/send_rapport_background"
+            app:layout_constraintBottom_toBottomOf="@id/main_screen_header"
+            app:layout_constraintLeft_toLeftOf="@id/main_screen_header"
+            app:layout_constraintRight_toRightOf="@id/main_screen_header"
+            app:layout_constraintTop_toTopOf="@id/main_screen_header" />
+
+
+        <ImageView
+            android:id="@+id/send_rapport"
+            android:layout_width="@dimen/more_than_large_ic_size"
+            android:layout_height="@dimen/more_than_large_ic_size"
+            android:padding="6dp"
+            android:src="@drawable/send_rapport_ic"
+            app:layout_constraintBottom_toBottomOf="@id/animated_background"
+            app:layout_constraintLeft_toLeftOf="@id/animated_background"
+            app:layout_constraintRight_toRightOf="@id/animated_background"
+            app:layout_constraintTop_toTopOf="@id/animated_background" />
+
+        <TextView
+            style="@style/white___boldcasual_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Envoyer le Rapport..."
+            app:layout_constraintLeft_toLeftOf="@id/main_screen_header"
+            app:layout_constraintRight_toRightOf="@id/main_screen_header"
+            app:layout_constraintTop_toBottomOf="@id/animated_background" />
+
+
+        <Button
+            android:id="@+id/alarm_notifs"
+            android:layout_width="@dimen/small_ic_size"
+            android:layout_height="@dimen/small_ic_size"
+            android:background="@drawable/alarm_ic"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sections_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_screen_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

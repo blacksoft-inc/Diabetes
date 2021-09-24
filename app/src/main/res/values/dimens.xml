@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="very_small_ic_size">24dp</dimen>
+    <dimen name="under_small_ic_size">28dp</dimen>
+    <dimen name="small_ic_size">34dp</dimen>
+    <dimen name="large_ic_size">42dp</dimen>
+    <dimen name="more_than_large_ic_size">46dp</dimen>
+    <dimen name="extra_large_ic_size">52dp</dimen>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--/**
+         * this project was designed and developped by "Rasmi Abdel Wadoud" if this last is used anywhere else without permission
+         * you may face some problems
+         * */ -->

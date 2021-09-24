@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reminder_window_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    android:background="@drawable/window_alarm_received_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/window_title"
+        style="@style/white___boldcasual_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ajouter une mesure"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/close_keyboard_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/close_keyboard_img"
+        android:layout_width="@dimen/under_small_ic_size"
+        android:layout_height="@dimen/under_small_ic_size"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/hide_keyb_white_ic"
+        app:layout_constraintBottom_toBottomOf="@id/window_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/window_title" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taux_avant_repas_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/text_field_white_theme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/window_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taux_avant_repas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="Taux avant Repas"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:scrollbars="horizontal"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        style="@style/white___boldcasual_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="g/l"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintBottom_toBottomOf="@id/taux_avant_repas_container"
+        app:layout_constraintRight_toRightOf="@id/taux_avant_repas_container"
+        app:layout_constraintTop_toTopOf="@id/taux_avant_repas_container" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taux_apres_repas_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/text_field_white_theme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taux_avant_repas_container">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taux_apres_repas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="Taux après Repas"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:scrollbars="horizontal"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        style="@style/white___boldcasual_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="g/l"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintBottom_toBottomOf="@id/taux_apres_repas_container"
+        app:layout_constraintRight_toRightOf="@id/taux_apres_repas_container"
+        app:layout_constraintTop_toTopOf="@id/taux_apres_repas_container" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/doze_insuline_injecte_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/text_field_white_theme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taux_apres_repas_container">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/doze_insuline_injecte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="Dose d'insuline injectée"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:scrollbars="horizontal"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        style="@style/white___boldcasual_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="ul"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:layout_constraintBottom_toBottomOf="@id/doze_insuline_injecte_container"
+        app:layout_constraintRight_toRightOf="@id/doze_insuline_injecte_container"
+        app:layout_constraintTop_toTopOf="@id/doze_insuline_injecte_container" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doze_insuline_injecte_container">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/white___boldcasual_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_button"
+            android:text="Annuler"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/add_button"
+            style="@style/white___boldcasual_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/confirm_button"
+            android:text="Ajouter"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

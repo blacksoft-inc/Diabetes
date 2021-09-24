@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="350dp"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    android:background="@drawable/window_alarm_received_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/alarm_title_and_time"
+        style="@style/white___boldcasual_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Alarm title and time"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/alarm_ic" />
+
+    <Button
+        android:id="@+id/ok_button"
+        style="@style/white___boldcasual_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/large_ic_size"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/confirm_button"
+        android:text="Ok"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+
+</LinearLayout>

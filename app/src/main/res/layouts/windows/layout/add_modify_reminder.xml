@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reminder_window_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:background="@drawable/window_white_background"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_field_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:theme="@style/text_field_primary_dark_theme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/close_keyboard_img"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:hint="Titre"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:scrollbars="horizontal"
+            android:scrollHorizontally="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/close_keyboard_img"
+        android:layout_width="@dimen/under_small_ic_size"
+        android:layout_height="@dimen/under_small_ic_size"
+        android:src="@drawable/hide_keyb_ic"
+        app:layout_constraintBottom_toBottomOf="@id/text_field_container"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_field_container" />
+
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_field_container" />
+
+
+    <TextView
+        android:id="@+id/days_title"
+        style="@style/black_casual_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Répétition:"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="@id/text_field_container"
+        app:layout_constraintTop_toBottomOf="@id/time_picker" />
+
+    <LinearLayout
+        android:id="@+id/checkbox_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/text_field_container"
+        app:layout_constraintTop_toBottomOf="@id/days_title">
+
+
+        <CheckBox
+            android:id="@+id/saturday"
+            style="@style/dark_casual_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sam" />
+
+        <CheckBox
+            android:id="@+id/sunday"
+            style="@style/dark_casual_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dim" />
+
+        <CheckBox
+            android:id="@+id/monday"
+            style="@style/dark_casual_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lun" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkbox_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/text_field_container"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_container_1">
+
+
+        <CheckBox
+            android:id="@+id/tuesday"
+            style="@style/dark_casual_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mar" />
+
+        <CheckBox
+            android:id="@+id/wednesday"
+            style="@style/dark_casual_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mer" />
+
+        <CheckBox
+            android:id="@+id/thursday"
+            style="@style/dark_casual_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jeu" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/friday"
+        style="@style/dark_casual_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Ven"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_container_2" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="24dp"
+        app:layout_constraintLeft_toLeftOf="@id/days_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/friday">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/white___boldcasual_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_button"
+            android:text="Annuler"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            style="@style/white___boldcasual_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/confirm_button"
+            android:text="Confirmer"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

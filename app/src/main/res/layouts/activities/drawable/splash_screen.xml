@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The android:opacity=”opaque” line — this is critical in preventing a flash of black as your theme transitions. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <!-- The background color, preferably the same as your normal theme -->
+
+
+    <item android:drawable="@drawable/main_screen_header">
+
+
+    </item>
+
+
+    <item
+        android:width="150dp"
+        android:height="150dp"
+        android:gravity="center">
+
+        <bitmap android:src="@drawable/diabete_app_name" />
+
+    </item>
+
+
+</layer-list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--/**
+         * this project was designed and developped by "Rasmi Abdel Wadoud" if this last is used anywhere else without permission
+         * you may face some problems
+         * */ -->

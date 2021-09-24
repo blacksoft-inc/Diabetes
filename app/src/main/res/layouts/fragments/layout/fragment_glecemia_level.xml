@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.glecemia_level">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/glecemia_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/add_mesure_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_navigation" />
+
+
+    <TextView
+        android:id="@+id/infos_title"
+        style="@style/black_casual_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes Mesures"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="@id/back_navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_navigation" />
+
+    <ImageView
+        android:id="@+id/add_mesure_button"
+        android:layout_width="@dimen/more_than_large_ic_size"
+        android:layout_height="@dimen/more_than_large_ic_size"
+        android:layout_margin="16dp"
+        android:background="@drawable/green_circle"
+        android:elevation="6dp"
+        android:src="@drawable/add_ic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_navigation"
+        android:layout_width="@dimen/more_than_large_ic_size"
+        android:layout_height="@dimen/more_than_large_ic_size"
+        android:layout_margin="8dp"
+        android:background="@drawable/previous_background"
+        android:elevation="6dp"
+        android:src="@drawable/previous_ic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
